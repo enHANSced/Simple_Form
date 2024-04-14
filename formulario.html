@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Formulario 1</title>
+</head>
+
+<body>
+    <center>
+        <h1>Formulario</h1>
+    </center>
+    <form action="" method="post">
+        <label class="etiqueta"> Código:</label>
+        <input type="text" name="codigo" id="codigo" placeholder="Ingrese codigo" />
+
+        <label class="etiqueta"> Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre completo" size="25" />
+
+
+        <label class="etiqueta">Edad:</label>
+        <input type="number" name="edad" id="edad" placeholder="Ingrese edad" size="2" />
+
+        <label class="etiqueta">Sexo:</label>
+        <select name="sexo" id="sexo">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+
+        <br /><br />
+        <label class="etiqueta">Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="M" />
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="F" />
+        <label for="femenino">Femenino</label>
+
+        <br /><br />
+        <label class="etiqueta">Estado Civil:</label>
+        <select name="estado_civil" id="estado_civil">
+            <option value="Soltero">Soltero</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="Viudo">Viudo</option>
+            <option value="Unión libre">Unión libre</option>
+        </select>
+
+        <br /><br />
+        <label class="etiqueta">Tipo de Comunicacion:</label>
+        <input type="checkbox" id="telefono" name="tipo_comunicacion[]" value="Telefono" />
+        <label for="telefono">Telefono</label>
+        <input type="checkbox" id="email" name="tipo_comunicacion[]" value="Email" />
+        <label for="email">Email</label>
+        <input type="checkbox" id="whatsapp" name="tipo_comunicacion[]" value="Whatsapp" />
+        <label for="whatsapp">Whatsapp</label>
+        <br /><br />
+
+        <label class="etiqueta">Direccion:</label>
+        <textarea name="direccion" id="direccion" cols="30" rows="5" placeholder="Ingrese direccion"></textarea>
+        <br /><br />
+
+
+        <fieldset>
+            <legend>Tiempo</legend>
+            <label class="etiqueta">Fecha:</label>
+            <input type="date" name="fecha" id="fecha" placeholder="Ingrese fecha" size="10" />
+
+            <label class="etiqueta">Hora:</label>
+            <input type="time" name="hora" id="hora" placeholder="Ingrese hora" size="10" />
+            <br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Dibujo</legend>
+            <label class="etiqueta">Color:</label>
+            <input type="color" name="color" id="color" placeholder="Ingrese color" size="10" />
+            <br /><br />
+            <label class="etiqueta">Imagen:</label>
+            <input type="file" name="imagen" id="imagen" placeholder="Ingrese imagen" size="10" />
+            <br /><br />
+        </fieldset>
+
+        <center>
+            <input class="boton" type="reset" value="Limpiar" />
+            <button>Enviar</button>
+        </center>
+        
+
+    </form>
+</body>
+
+</html>
